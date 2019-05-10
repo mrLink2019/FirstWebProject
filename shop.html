@@ -1,23 +1,21 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 		<title>Shop</title>
 		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="shop.css">
-		<link rel="stylesheet" type="text/css" href="header&bg.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="background.css">
 		<link rel="stylesheet" type="text/css" href="carousel-icons.css">
 		<link rel="stylesheet" type="text/css" href="footer.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	<body >
+	<body >		
 		<header class="navbar navbar-expand-md navbar-dark bg-primary text-light">
 			<a href="" class="navbar-brand">
-				<img src="images/guitar_icon.png">
+				<img src="images/guitar_icon.png" alt="">
 			</a>
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#md">
 			<span class="navbar-toggler-icon"></span>
@@ -25,7 +23,7 @@
 			<div class="navbar-collapse collapse" id="md">
 				<ul class="navbar-nav bd-navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link text-warning" href="index.html" >
+						<a class="nav-link text-warning rounded-pill" href="index.html" >
 							<b>Home</b>
 						</a>
 					</li>
@@ -35,29 +33,45 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-warning" href="" >
-							<b> Orders </b>
-						</a>
+						<button class="nav-link btn btn-primary text-warning rounded-pill goToAction">
+						<b> Orders </b>
+						</button>
 					</li>
 					<li class="nav-item">
-						<a href="" class="nav-link text-warning">
-							<b> Brands </b>
-						</a>
+						<button class="nav-link btn btn-primary text-warning rounded-pill goToAction">
+						<b> Brands </b>
+						</button>
 					</li>
 					<li class="nav-item">
-						<a href="info.html" class="nav-link text-warning">
+						<a href="info.html" class="nav-link text-warning rounded-pill">
 							<b> Info </b>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</header>
-		<div class="toast" style="position: fixed; top: 20; right: 0; z-index: 99;" data-delay="5000">
-			<div class="toast-header">
-				Toast Header
+		<div class="toast" id="goToToast" data-delay="3000">
+			<div class="toast-header bg-danger text-white">
+				<b>Notification</b>
 			</div>
-			<div class="toast-body">
-				Some text inside the toast body
+			<div class="toast-body bg-info text-white">
+				<b>This page will be added later</b>
+			</div>
+		</div>
+		<div class="toast" id="buyToast" data-delay="3000">
+			<div class="toast-header bg-danger text-white">
+				<b>Notification</b>
+			</div>
+			<div class="toast-body bg-info text-white">
+				<b>This function will be added later</b>
+			</div>
+		</div>
+		<div class="toast" id="groupsToast" data-delay="3000">
+			<div class="toast-header bg-danger text-white">
+				<b>Notification</b>
+			</div>
+			<div class="toast-body bg-info text-white">
+				<b>This function will be added later</b>
 			</div>
 		</div>
 		<div class="container-fluid">
@@ -68,57 +82,7 @@
 					<div>
 						<div class="card-deck">
 							<div class="card text-white bg-danger">
-								<img class="card-img" src="images/g1_1.jpg" alt="" data-toggle="modal" data-target="#g1">
-								<div class="modal fade" id="g1">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content bg-info">
-											<div class="modal-header">
-												<h5 class="modal-title" id="ModalLabel"><b>LA Electric Guitar by Gear4music, Red</b></h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<div id="a1" class="carousel slide carousel-fade" data-ride="carousel">
-													<div class="carousel-inner">
-														<div class="carousel-item active">
-															<img src="images/g1_2.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_3.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_4.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_5.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_6.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_7.jpg" class="d-block w-75" alt="">
-														</div>
-													</div>
-													<a class="carousel-control-prev" href="#a1" role="button" data-slide="prev">
-														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-														<span class="sr-only">Previous</span>
-													</a>
-													<a class="carousel-control-next" href="#a1" role="button" data-slide="next">
-														<span class="carousel-control-next-icon" aria-hidden="true"></span>
-														<span class="sr-only">Next</span>
-													</a>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<p class="text-warning" id="count"><b>19 in stock</b></p>
-												<p class="guitarInfo">
-													The greatest gift. A first step into music. The LA Electric Guitar is the quickest way to get stuck into the world of rock 'n' roll. Its single-coil pickups let you fill the air with delicate clean tones, or puncture it with a distorted wall of sound.
-												The slim C-shape neck makes it easier for you to learn and master chords. It'll probably take you less than 30 minutes to learn G major and D major - which is all you need to play Should I Stay or Should I Go. That's how close you are to being able to play guitar. And because of the contoured body, it'll sit in your hands and fit your body just right. The LA electric is the ideal first step into music. </p>
-											</div>
-										</div>
-									</div>
-								</div>
+								<img class="card-img" src="images/g1_1.jpg" alt="" data-toggle="modal" data-target="#modal1">
 								<div class="card-body">
 									<h5 class="card-title"><b>LA Electric Guitar by Gear4music, Red</b></h5>
 									<p class="card-text">Designed to be played by anybody - with features to make learning easy.</p>
@@ -127,184 +91,564 @@
 											<button class="btn btn-primary buyAction"><b>Buy it!</b></button>
 										</div>
 										<div class="col-7">
-											<p class="text-warning" id="price"><b>£79.99</b> <!-- <sup class="text-info">aa</sup><sup><b> 20 in stock</b></sup> --></p>
+											<p class="text-warning price"><b>£79.99</b></p>
 										</div>
 									</div>
-									
-									
+								</div>
+							</div>
+							<div class="modal fade" id="modal1">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content bg-info">
+										<div class="modal-header">
+											<h5 class="modal-title text-white"  ><b>LA Electric Guitar by Gear4music, Red</b></h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div id="guitar-carousel-1" class="carousel slide carousel-fade" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/g1_2.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g1_3.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g1_4.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g1_5.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g1_6.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g1_7.jpg" class="d-block w-75" alt="">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#guitar-carousel-1" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#guitar-carousel-1" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<p class="text-warning count"><b>19 in stock</b></p>
+											<p class="text-white guitarInfo">
+												The greatest gift. A first step into music. The LA Electric Guitar is the quickest way to get stuck into the world of rock 'n' roll. Its single-coil pickups let you fill the air with delicate clean tones, or puncture it with a distorted wall of sound.
+											The slim C-shape neck makes it easier for you to learn and master chords. It'll probably take you less than 30 minutes to learn G major and D major - which is all you need to play Should I Stay or Should I Go. That's how close you are to being able to play guitar. And because of the contoured body, it'll sit in your hands and fit your body just right. The LA electric is the ideal first step into music. </p>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="card text-white bg-info">
-								<img class="card-img" src="images/g2_1.jpg" alt="" data-toggle="modal" data-target="#g2">
-								<div class="modal fade" id="g2">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content bg-info">
-											<div class="modal-header">
-												<h5 class="modal-title" id="ModalLabel"><b>Ibanez RG370AHMZ, Blue Moon Burst</b></h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<div id="a2" class="carousel slide carousel-fade" data-ride="carousel">
-													<div class="carousel-inner">
-														<div class="carousel-item active">
-															<img src="images/g2_2.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g2_3.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g2_4.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g2_5.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g2_6.jpg" class="d-block w-75" alt="">
-														</div>
-													</div>
-													<a class="carousel-control-prev" href="#a2" role="button" data-slide="prev">
-														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-														<span class="sr-only">Previous</span>
-													</a>
-													<a class="carousel-control-next" href="#a2" role="button" data-slide="next">
-														<span class="carousel-control-next-icon" aria-hidden="true"></span>
-														<span class="sr-only">Next</span>
-													</a>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<p class="text-warning" id="count"><b>8 in stock</b></p>
-												<p class="guitarInfo">
-													The Ibanez RG370AHMZ, Blue Moon Burst is part of the RG series, which is the most recognisable and distinctive model in the Ibanez line. Equipped with a trio of Quantum pickups, players can achieve an accelerated bass response and high-end articulation, which are especially designed to accommodate fast playing styles such as metal.
-												This high-performance guitar also features Ibanez's wizard neck, which is a thin profile designed for fast styles. Other features include the Edge-Zero II tremolo for perfect intonation, angled headstock for better string tension, and many more. The RG370AHMZ is the perfect choice for players who specialise in fast styles such as metal and rock. </p>
-											</div>
-										</div>
-									</div>
-								</div>
+								<img class="card-img" src="images/g2_1.jpg" alt="" data-toggle="modal" data-target="#modal2">
 								<div class="card-body">
 									<h5 class="card-title"><b>Ibanez RG370AHMZ, Blue Moon Burst</b></h5>
 									<p class="card-text">Quantum Pickups Provide Accelerated Bass Response </p>
 									<div class="row">
 										<div class="col-5">
-											<a href="#" class="btn btn-primary"><b>Buy it!</b></a>
+											<button class="btn btn-primary buyAction"><b>Buy it!</b></button>
 										</div>
 										<div class="col-7">
-											<p class="text-warning" id="price"><b>£415.00</b> <!-- <sup class="text-info">aa</sup><sup><b>8 in stock</b></sup> --></p>
+											<p class="text-warning price"><b>£429.99</b></p>
 										</div>
 									</div>
-									
-									
+								</div>
+							</div>
+							<div class="modal fade" id="modal2">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content bg-info">
+										<div class="modal-header">
+											<h5 class="modal-title text-white"  ><b>Ibanez RG370AHMZ, Blue Moon Burst</b></h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div id="guitar-carousel-2" class="carousel slide carousel-fade" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/g2_2.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g2_3.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g2_4.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g2_5.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g2_6.jpg" class="d-block w-75" alt="">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#guitar-carousel-2" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#guitar-carousel-2" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<p class="text-warning count"><b>8 in stock</b></p>
+											<p class="text-white guitarInfo">
+												The Ibanez RG370AHMZ, Blue Moon Burst is part of the RG series, which is the most recognisable and distinctive model in the Ibanez line. Equipped with a trio of Quantum pickups, players can achieve an accelerated bass response and high-end articulation, which are especially designed to accommodate fast playing styles such as metal.
+											This high-performance guitar also features Ibanez's wizard neck, which is a thin profile designed for fast styles. Other features include the Edge-Zero II tremolo for perfect intonation, angled headstock for better string tension, and many more. The RG370AHMZ is the perfect choice for players who specialise in fast styles such as metal and rock. </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card text-white bg-danger">
+								<img class="card-img" src="images/g3_1.jpg" alt="" data-toggle="modal" data-target="#modal3">
+								<div class="card-body">
+									<h5 class="card-title"><b>Gretsch G6659TG Players Edition Broadkaster Jr</b></h5>
+									<p class="card-text">A highly desirable Gretsch with classic looks and modern tweaks</p>
+									<div class="row">
+										<div class="col-5">
+											<button class="btn btn-primary buyAction"><b>Buy it!</b></button>
+										</div>
+										<div class="col-7">
+											<p class="text-warning price"><b>£2,399.99</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modal3">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content bg-info">
+										<div class="modal-header">
+											<h5 class="modal-title text-white"  ><b>Gretsch G6659TG Players Edition Broadkaster Jr</b></h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div id="guitar-carousel-3" class="carousel slide carousel-fade" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/g3_2.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g3_3.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g3_4.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g3_5.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g3_6.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g3_7.jpg" class="d-block w-75" alt="">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#guitar-carousel-3" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#guitar-carousel-3" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<p class="text-warning count"><b>37 in stock</b></p>
+											<p class="text-white guitarInfo">
+												Play a classic 6120 or Duo Jet and it can seem a bit, well, old-fashioned. A growing number of players desire the brand’s looks, sound and unmatched vibe, but also want something a tad more versatile and user-friendly. Enter this latest Players Edition model with its neck set lower into the body for improved access.
+											Higher-output Filter’Tron-style humbucking pickup (Full’Trons) and a modernised Bigsby vibrato where through-stringing replaces the notorious ‘hooking the ball-end over a peg’ system that scuppered any chance of a quick change. Mate these modern tweaks with another recent innovation (for Gretsch, at any rate), the Centre Block range, and you have a guitar ready to compete with anything out there - in virtually any style.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="card-deck mt-3">
-							<div class="card">
-								<img class="card-img" src="images/g1_1.jpg" alt="" data-toggle="modal" data-target="#g1">
-								<div class="modal fade" id="g1">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<div id="c" class="carousel slide carousel-fade" data-ride="carousel">
-													<div class="carousel-inner">
-														<div class="carousel-item active">
-															<img src="images/g1_2.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_3.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_4.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_5.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_6.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_7.jpg" class="d-block w-75" alt="">
-														</div>
-													</div>
-													<a class="carousel-control-prev" href="#c" role="button" data-slide="prev">
-														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-														<span class="sr-only">Previous</span>
-													</a>
-													<a class="carousel-control-next" href="#c" role="button" data-slide="next">
-														<span class="carousel-control-next-icon" aria-hidden="true"></span>
-														<span class="sr-only">Next</span>
-													</a>
-												</div>
-											</div>
+							<div class="card text-white bg-info">
+								<img class="card-img" src="images/g4_1.jpg" alt="" data-toggle="modal" data-target="#modal4">
+								<div class="card-body">
+									<h5 class="card-title"><b>Gibson Les Paul Standard 2018, Blood Orange Burst</b></h5>
+									<p class="card-text">BurstBucker Pro Pickups Deliver Vintage Tones & Punch.</p>
+									<div class="row">
+										<div class="col-5">
+											<button class="btn btn-primary buyAction"><b>Buy it!</b></button>
+										</div>
+										<div class="col-7">
+											<p class="text-warning price"><b>£2,199.99</b></p>
 										</div>
 									</div>
-								</div>
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									<a href="#" class="btn btn-primary">Go somewhere</a>
 								</div>
 							</div>
-							<div class="card">
-								<img class="card-img" src="images/g1_1.jpg" alt="" data-toggle="modal" data-target="#g1">
-								<div class="modal fade" id="g1">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<div id="c" class="carousel slide carousel-fade" data-ride="carousel">
-													<div class="carousel-inner">
-														<div class="carousel-item active" data-interval="5000">
-															<img src="images/g1_1.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_2.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_3.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_4.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_5.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_6.jpg" class="d-block w-75" alt="">
-														</div>
-														<div class="carousel-item">
-															<img src="images/g1_7.jpg" class="d-block w-75" alt="">
-														</div>
+							<div class="modal fade" id="modal4">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content bg-info">
+										<div class="modal-header">
+											<h5 class="modal-title text-white"  ><b>Gibson Les Paul Standard 2018, Blood Orange Burst</b></h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div id="guitar-carousel-4" class="carousel slide carousel-fade" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/g4_2.jpg" class="d-block w-75" alt="">
 													</div>
-													<a class="carousel-control-prev" href="#c" role="button" data-slide="prev">
-														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-														<span class="sr-only">Previous</span>
-													</a>
-													<a class="carousel-control-next" href="#c" role="button" data-slide="next">
-														<span class="carousel-control-next-icon" aria-hidden="true"></span>
-														<span class="sr-only">Next</span>
-													</a>
+													<div class="carousel-item">
+														<img src="images/g4_3.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g4_4.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g4_5.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g4_6.jpg" class="d-block w-75" alt="">
+													</div>
 												</div>
+												<a class="carousel-control-prev" href="#guitar-carousel-4" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#guitar-carousel-4" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
 											</div>
+										</div>
+										<div class="modal-footer">
+											<p class="text-warning count"><b>12 in stock</b></p>
+											<p class="text-white guitarInfo">
+												The Gibson Les Paul Standard Electric Guitar, Blood Orange Burst (2018) delivers the iconic instrument in all its high-quality glory. Featuring an incredibly smooth asymmetrical slim taper neck and ultra-modern weight relief, the Les Paul is designed with comfort in mind for the ultimate performance.
+											Its set of BurstBucker Pro pickups deliver beautifully vintage Gibson tones, built to capture the magic of the old humbuckers of the 50s, with PAF style asymmetrical coils for a lusciously open tonality. The lightweight mahogany body is topped with stunning AAA grade figured maple, that enhances the guitar's tone with warm, bright characteristics and creates a visually stunning and unique look. </p>
 										</div>
 									</div>
 								</div>
+							</div>
+							<div class="card text-white bg-danger">
+								<img class="card-img" src="images/g5_1.jpg" alt="" data-toggle="modal" data-target="#modal5">
 								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									<a href="#" class="btn btn-primary">Go somewhere</a>
+									<h5 class="card-title"><b>PRS SE Custom 24</b> <br> <br></h5>
+									<p class="card-text">The mid-priced, Korean-made, do-it-all solidbody.</p>
+									<div class="row">
+										<div class="col-5">
+											<button class="btn btn-primary buyAction"><b>Buy it!</b></button>
+										</div>
+										<div class="col-7">
+											<p class="text-warning price"><b>£849.99</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modal5">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content bg-info">
+										<div class="modal-header">
+											<h5 class="modal-title text-white"  ><b>PRS SE Custom 24</b></h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div id="guitar-carousel-5" class="carousel slide carousel-fade" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/g5_2.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g5_3.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g5_4.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g5_5.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g5_6.jpg" class="d-block w-75" alt="">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#guitar-carousel-5" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#guitar-carousel-5" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<p class="text-warning count"><b>19 in stock</b></p>
+											<p class="text-white guitarInfo">
+												The PRS SE range has offered solid, well-built, great-sounding guitars for years now, and the PRS SE Custom 24 2018 is a perfect example. This Korean-built mass of maple, mahogany and rosewood is a classy-looking guitar. It’s a wonderful instrument to play too - PRS's expertise making eye-wateringly expensive guitars is evident from the moment you pick it up.
+											The bridge, for example, has a noticeably low profile. This makes palm-muting a much more pleasant experience, especially if you’re used to chugging away on a Floyd Rose-style bridge. A lot has been made of the SE Custom’s pickups.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card text-white bg-info">
+								<img class="card-img" src="images/g6_1.jpg" alt="" data-toggle="modal" data-target="#modal6">
+								<div class="card-body">
+									<h5 class="card-title"><b>Epiphone Sheraton II Pro, Ebony</b> <br> <br></h5>
+									<p class="card-text">Ebony Finish Laminated Maple Top.</p>
+									<div class="row">
+										<div class="col-5">
+											<button class="btn btn-primary buyAction"><b>Buy it!</b></button>
+										</div>
+										<div class="col-7">
+											<p class="text-warning price"><b>£559.99</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modal6">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content bg-info">
+										<div class="modal-header">
+											<h5 class="modal-title text-white"  ><b>Epiphone Sheraton II Pro, Ebony</b></h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div id="guitar-carousel-6" class="carousel slide carousel-fade" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item">
+														<img src="images/g6_2.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item active">
+														<img src="images/g6_3.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g6_4.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g6_5.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g6_6.jpg" class="d-block w-75" alt="">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#guitar-carousel-6" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#guitar-carousel-6" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<p class="text-warning count"><b>16 in stock</b></p>
+											<p class="text-white guitarInfo">
+												The Epiphone Sheraton II Pro Electric Guitar honours Epiphone's most influential thin-line semi-hollowbody electric archtop, featuring a stunning Ebony finish laminated Maple top and critically acclaimed Probucker™ pickups with coil-tapping and a Graphtech® NuBone XL™ nut.
+											Offering striking looks, the Sheraton II Pro is made from Laminated Maple and topped with a bound "Tortoise" style pickguard with a signature metal "E", as well as a 5-piece laminated hard Maple/Walnut neck with a beautiful Rosewood fingerboard and block/triangle pearloid and abalone inlays.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-deck mt-3">
+							<div class="card text-white bg-danger">
+								<img class="card-img" src="images/g7_1.jpg" alt="" data-toggle="modal" data-target="#modal7">
+								<div class="card-body">
+									<h5 class="card-title"><b>Yamaha FS-TA TransAcoustic, Ruby Red</b></h5>
+									<p class="card-text">Perfect For Performing Musicians Due To Built-In Electronics.</p>
+									<div class="row">
+										<div class="col-5">
+											<button class="btn btn-primary buyAction buyAction"><b>Buy it!</b></button>
+										</div>
+										<div class="col-7">
+											<p class="text-warning price"><b>£799.99</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modal7">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content bg-info">
+										<div class="modal-header">
+											<h5 class="modal-title text-white"  ><b>Yamaha FS-TA TransAcoustic, Ruby Red</b></h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div id="guitar-carousel-7" class="carousel slide carousel-fade" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/g7_2.jpeg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g7_3.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g7_4.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g7_5.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g7_6.jpg" class="d-block w-75" alt="">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#guitar-carousel-7" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#guitar-carousel-7" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<p class="text-warning count"><b>27 in stock</b></p>
+											<p class="text-white guitarInfo">
+												The Yamaha FS-TA TransAcoustic, Ruby Red offers a beautifully articulate tone combined with a comfortable playing experience and built-in electronics, perfect for the performing musician. With a solid spruce top and mahogany body, the FS-TA TransAcoustic produces a versatile sound with crisp articulation, a broad dynamic range, a rich resonant warmth, and a punchy mid-range.
+											Furthermore, the TransAcoustic features a concert body, which responds impeccably well to fingerpicking techniques, as well as providing a comfortable playing experience due to its more compact size. Additionally, the FS-TA also features new scalloped bracing for a loud and rich acoustic sound.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card text-white bg-info">
+								<img class="card-img" src="images/g8_1.jpg" alt="" data-toggle="modal" data-target="#modal8">
+								<div class="card-body">
+									<h5 class="card-title"><b>Gibson Montana Hummingbird</b> <br> <br></h5>
+									<p class="card-text">The iconic Gibson songbird, beloved by folk, rock and country types.</p>
+									<div class="row">
+										<div class="col-5">
+											<button class="btn btn-primary buyAction"><b>Buy it!</b></button>
+										</div>
+										<div class="col-7">
+											<p class="text-warning price"><b>£3,199.99</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modal8">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content bg-info">
+										<div class="modal-header">
+											<h5 class="modal-title text-white"  ><b>Gibson Montana Hummingbird</b></h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div id="guitar-carousel-8" class="carousel slide carousel-fade" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/g8_2.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g8_3.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g8_4.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g8_5.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g8_6.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g8_7.jpg" class="d-block w-75" alt="">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#guitar-carousel-8" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#guitar-carousel-8" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<p class="text-warning count"><b>19 in stock</b></p>
+											<p class="text-white guitarInfo">
+												From top to bottom, this Hummingbird creates a buzz. Whatever your preference in size, colour, tone and playing style, it’s difficult to avoid picking this Cherry Sunburst up. It’s such a simple guitar to play that it’s rare to ever feel like you’re incapable of striking the right chord - especially on a neck that’s just 12” in radius.
+											While the traditionally ornate decoration and blushing finish have been lovingly retained, this modern Montana incarnation offers a discrete LR Baggs Element VTC system for plug-in power.It is unlike many we have seen and produces one of the best sounds we’ve heard from an electric acoustic. </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card text-white bg-danger">
+								<img class="card-img" src="images/g9_1.jpg" alt="" data-toggle="modal" data-target="#modal9">
+								<div class="card-body">
+									<h5 class="card-title"><b>Guild Traditional D-55</b></h5>
+									<p class="card-text">A highly desirable, slim-necked dreadnought.</p>
+									<div class="row">
+										<div class="col-5">
+											<button class="btn btn-primary buyAction"><b>Buy it!</b></button>
+										</div>
+										<div class="col-7">
+											<p class="text-warning price"><b>£499.99</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modal9">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content bg-info">
+										<div class="modal-header">
+											<h5 class="modal-title text-white"  ><b>Guild Traditional D-55</b></h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true" >&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div id="guitar-carousel-9" class="carousel slide carousel-fade" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/g9_2.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g9_3.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g9_4.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g9_5.jpg" class="d-block w-75" alt="">
+													</div>
+													<div class="carousel-item">
+														<img src="images/g9_6.jpg" class="d-block w-75" alt="">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#guitar-carousel-9" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#guitar-carousel-9" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<p class="text-warning count"><b>21 in stock</b></p>
+											<p class="text-white guitarInfo">
+											The Guild AD-5CE dreadnought cutaway electro acoustic guitar has Guild's signature arched-back body design with a solid Sitka spruce top and laminated rosewood back and sides. This gives the instrument a full, balanced tone with excellent volume and projection. The Fishman Presys Plus pickup system includes an onboard electronic tuner and anti-feedback control. This is an excellent guitar with a smooth, comfortable feel and effortless playability.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -313,83 +657,93 @@
 				<div class="col-xs-12 col-md-3 col-xl-2" id="col3">
 				</div>
 			</div>
-			<footer class="row pt-3" role="">
+			<footer class="row pt-3" id="footer">
 				<div class="col">
 					<div class="container-fluid">
 						<div class="row">
+							<div class="col-md-2">
+							</div>
 							<div class="col-md-3 col-sm-6">
-								<!--Column1-->
 								<div class="footer-pad">
-									<p class="h4">Heading 1</p>
+									<h4>Contacts</h4>
 									<ul class="list-unstyled">
-										<li><a href="#"></a></li>
-										<li><a href="#">Payment Center</a></li>
-										<li><a href="#">Contact Directory</a></li>
-										<li><a href="#">Forms</a></li>
-										<li><a href="#">News and Updates</a></li>
-										<li><a href="#">FAQs</a></li>
+										<li><a href="#footer" class="goToAction footerLinks">Payment Center</a></li>
+										<li><a href="#footer" class="goToAction footerLinks">Contact Support</a></li>
+										<li><a href="#footer" class="goToAction footerLinks">News and Updates</a></li>
+										<li><a href="#footer" class="goToAction footerLinks">Forum</a></li>
 									</ul>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
-								<!--Column1-->
 								<div class="footer-pad">
-									<h4>Heading 2</h4>
+									<h4>FAQs</h4>
 									<ul class="list-unstyled">
-										<li><a href="#">Website Tutorial</a></li>
-										<li><a href="#">Accessibility</a></li>
-										<li><a href="#">Disclaimer</a></li>
-										<li><a href="#">Privacy Policy</a></li>
-										<li><a href="#">FAQs</a></li>
-										<li><a href="#">Webmaster</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<!--Column1-->
-								<div class="footer-pad">
-									<h4>Heading 3</h4>
-									<ul class="list-unstyled">
-										<li><a href="#">Parks and Recreation</a></li>
-										<li><a href="#">Public Works</a></li>
-										<li><a href="#">Police Department</a></li>
-										<li><a href="#">Fire</a></li>
-										<li><a href="#">Mayor and City Council</a></li>
-										<li>
-											<a href="#"></a>
-										</li>
+										<li><a href="#footer" class="goToAction footerLinks">Website Tutorial</a></li>
+										<li><a href="#footer" class="goToAction footerLinks">Accessibility</a></li>
+										<li><a href="#footer" class="goToAction footerLinks">Privacy Policy</a></li>
+										<li><a href="#footer" class="goToAction footerLinks">FAQ</a></li>
 									</ul>
 								</div>
 							</div>
 							<div class="col-md-3">
 								<h4>Follow Us</h4>
 								<ul class="social-network social-circle">
-									<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-									<li><a href="#" class="icoTelegram" title="Telegram"><i class="fa fa-telegram"></i></a></li>
+									<li><a href="#footer" class="icoFacebook groupsAction" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#footer" class="icoLinkedin groupsAction" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#footer" class="icoTelegram groupsAction" title="Telegram"><i class="fa fa-telegram"></i></a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12 copy">
-								<p class="text-center">&copy; Copyright 2019 - Created by Andriy Lianh.</p>
+								<p class="text-center">&copy; Copyright 2019 - Created by Andriy Lianh</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</footer>
 		</div>
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 		<script>
 			$(document).ready(function(){
 				$(".buyAction").click(function(){
-					$('.toast').toast('show');
+					$('#buyToast').toast('show');
 				});
 			});
 		</script>
+		<script>
+			$(document).ready(function(){
+				$(".goToAction").click(function(){
+					$('#goToToast').toast('show');
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				$(".groupsAction").click(function(){
+					$('#groupsToast').toast('show');
+				});
+			});
+		</script>
+		<div id="hellopreloader"> 
+			<div id="hellopreloader_preload">
+			</div>
+		</div>
+		<script>
+			var hellopreloader = document.getElementById("hellopreloader_preload");
+			function fadeOutnojquery(el) {
+				el.style.opacity = 1;
+				var interhellopreloader = setInterval(function() {
+					el.style.opacity = el.style.opacity - 0.05;
+					if (el.style.opacity <=0.05) { clearInterval(interhellopreloader);
+					hellopreloader.style.display = "none";
+				}},16);
+			}
+			window.onload = function() {
+				setTimeout(function() {
+				fadeOutnojquery(hellopreloader);},800);
+			};</script>
 	</body>
 </html>

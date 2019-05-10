@@ -1,0 +1,98 @@
+H1 {
+	color: #2427FE;
+	text-align: center;
+	background-color: yellow; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #F88220 , #F9EA38);
+}
+
+H2 {
+	color: #2427FE;
+	text-align: center;
+	background-color: yellow; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #F88220 , #F9EA38);
+}
+
+#infoImg {
+	height: 850px;
+	width:  850px;
+	border-radius: 8px;
+	display: block;
+    margin-left: 150px;
+    margin-right: auto;
+	
+}
+
+#infoText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-align: center;
+  font-family: "Vogue";
+
+}
+
+#imgText {
+   background: linear-gradient(to right, #edff00, #e7f43a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.count {
+	font-size: 20px;	
+}
+
+.price {
+	font-size: 30px;
+}
+
+.guitarInfo {
+	font-size: 18px;
+}
+
+.toast {
+	position: fixed; 
+	top: 5; 
+	right: 0; 
+	z-index: 99;
+	width: 400px;	
+}
+
+.toast-header {
+	height: 40px;
+	font-size: 20px;
+}
+
+.toast-body {
+	height: 60px;
+	font-size: 18px;
+}
+
+.caption-head {
+	font-size: 25px;
+}
+
+.caption-body {
+	font-size: 20px;
+}
+
+.footerLinks {
+	font-size: 17px;
+}
+
+#hellopreloader>p {
+	display:none;
+}
+#hellopreloader_preload{
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-width: 1000px;
+	background: #1E8BC3 url(http://hello-site.ru//main/images/preloads/bars.svg) center center no-repeat;
+	background-size:72px;
+}
