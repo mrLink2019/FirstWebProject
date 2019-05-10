@@ -1,0 +1,33 @@
+
+H1 {
+	color: #2427FE;
+	text-align: center;
+	background-color: yellow; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #F88220 , #F9EA38);
+}
+
+H2 {
+	color: #2427FE;
+	text-align: center;
+	background-color: yellow; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #F88220 , #F9EA38);
+}
+
+.card {
+	width: 18rem; 
+	height: 35rem;
+}
+
+#col1 {
+	background-image: url(images/col1-bg.jpg);
+	background-attachment: fixed;
+}
+
+#col3 {
+	background-image: url(images/col3-bg.jpg);
+	background-attachment: fixed;
+}
+
+#col-main {
+	background-image: url(images/col-main-bg.jpg);
+}
